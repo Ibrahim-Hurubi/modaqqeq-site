@@ -44,7 +44,7 @@ export function Header() {
               <span className="text-2xl font-bold bg-gradient-to-r from-navy-700 to-navy-900 bg-clip-text text-transparent">
                 مدقق
               </span>
-              <span className="text-xs text-gray-500 font-medium tracking-wide">AuditBuddy AI</span>
+              <span className="text-xs text-gray-500 font-medium tracking-wide">Modaqqeq</span>
             </div>
           </Link>
         </div>

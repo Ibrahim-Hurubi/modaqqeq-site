@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <span className="text-2xl font-bold">مدقق</span>
-              <span className="text-sm text-gray-300">AuditBuddy AI</span>
+              <span className="text-sm text-gray-300">Modaqqeq</span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               منصة ذكاء اصطناعي متطورة تدعم المدققين الماليين في تحليل التقارير واكتشاف المخاطر المحتملة بكفاءة وسرعة
@@ -179,7 +179,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-navy-700 text-center">
           <p className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} مدقق | AuditBuddy AI. جميع الحقوق محفوظة.
+            © {new Date().getFullYear()} مدقق | Modaqqeq. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>
