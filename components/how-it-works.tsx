@@ -6,7 +6,8 @@ export function HowItWorks() {
     {
       icon: <ScanSearch className="h-8 w-8" />,
       title: "قراءة التقارير",
-      description: "استخدام تقنية OCR المتطورة لقراءة التقارير المالية المسحوبة ضوئيًا أو الرقمية بدقة عالية",
+      description:
+        "استخدام تقنية OCR المتطورة لقراءة التقارير المالية المسحوبة ضوئيًا أو الرقمية بدقة عالية",
       color: "from-blue-500 to-cyan-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
@@ -14,7 +15,8 @@ export function HowItWorks() {
     {
       icon: <Brain className="h-8 w-8" />,
       title: "فهم المحتوى",
-      description: "استخدام نماذج اللغة الكبيرة (LLMs) لفهم السياق والمحتوى بدقة عالية وتحليل المعاني",
+      description:
+        "استخدام نماذج اللغة الكبيرة (LLMs) لفهم السياق والمحتوى بدقة عالية وتحليل المعاني",
       color: "from-purple-500 to-indigo-600",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
@@ -22,7 +24,8 @@ export function HowItWorks() {
     {
       icon: <FileCode className="h-8 w-8" />,
       title: "تطبيق القواعد المالية",
-      description: "تطبيق محرك القواعد المالية المتخصص لتحليل البيانات وفقًا للمعايير المحاسبية الدولية",
+      description:
+        "تطبيق محرك القواعد المالية المتخصص لتحليل البيانات وفقًا للمعايير المحاسبية الدولية",
       color: "from-green-500 to-emerald-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200",
@@ -30,7 +33,8 @@ export function HowItWorks() {
     {
       icon: <AlertTriangle className="h-8 w-8" />,
       title: "اكتشاف الشذوذ",
-      description: "تحديد الحالات الشاذة والمخاطر المحتملة وتنبيه المدققين إليها مع تقديم التوصيات",
+      description:
+        "تحديد الحالات الشاذة والمخاطر المحتملة وتنبيه المدققين إليها مع تقديم التوصيات",
       color: "from-red-500 to-pink-600",
       bgColor: "bg-red-50",
       borderColor: "border-red-200",
@@ -59,7 +63,6 @@ export function HowItWorks() {
         </div>
 
         <div className="relative">
-          {/* Connection Lines */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-300 to-transparent transform -translate-y-1/2 z-0"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
@@ -69,9 +72,9 @@ export function HowItWorks() {
                   className={`group relative overflow-hidden border-2 ${step.borderColor} ${step.bgColor} hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-4`}
                 >
                   {/* Step Number */}
-                  <div className="absolute -top-6 right-6 z-20">
+                  <div className="absolute top-3 right-3 z-20">
                     <div
-                      className={`w-12 h-12 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                      className={`w-10 h-10 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center text-white font-bold text-sm shadow-md`}
                     >
                       {index + 1}
                     </div>
@@ -93,12 +96,12 @@ export function HowItWorks() {
                     </div>
                   </CardContent>
 
-                  {/* Decorative elements */}
+                  {/* Hover effects */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-white/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </Card>
 
-                {/* Arrow between steps */}
+                {/* Arrows between steps */}
                 {index < steps.length - 1 && (
                   <div className="hidden lg:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
                     <div className="w-8 h-8 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center shadow-sm">
@@ -108,54 +111,6 @@ export function HowItWorks() {
                 )}
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Process Flow Visualization */}
-        <div className="mt-20 bg-gradient-to-r from-gray-50 to-blue-50/30 rounded-3xl p-8 md:p-12 border border-gray-200">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-navy-800 mb-4">من التقرير إلى النتائج في دقائق</h3>
-            <p className="text-gray-600">تتبع رحلة تحليل التقرير المالي خطوة بخطوة</p>
-          </div>
-
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center text-white mb-3 shadow-lg">
-                <ScanSearch className="w-8 h-8" />
-              </div>
-              <span className="text-sm font-medium text-gray-700">رفع التقرير</span>
-              <span className="text-xs text-gray-500">٠ ثانية</span>
-            </div>
-
-            <div className="flex-1 h-0.5 bg-gradient-to-r from-blue-300 to-purple-300 hidden md:block"></div>
-
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white mb-3 shadow-lg">
-                <Brain className="w-8 h-8" />
-              </div>
-              <span className="text-sm font-medium text-gray-700">تحليل ذكي</span>
-              <span className="text-xs text-gray-500">٣٠ ثانية</span>
-            </div>
-
-            <div className="flex-1 h-0.5 bg-gradient-to-r from-purple-300 to-green-300 hidden md:block"></div>
-
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white mb-3 shadow-lg">
-                <FileCode className="w-8 h-8" />
-              </div>
-              <span className="text-sm font-medium text-gray-700">تطبيق القواعد</span>
-              <span className="text-xs text-gray-500">٦٠ ثانية</span>
-            </div>
-
-            <div className="flex-1 h-0.5 bg-gradient-to-r from-green-300 to-red-300 hidden md:block"></div>
-
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center text-white mb-3 shadow-lg">
-                <AlertTriangle className="w-8 h-8" />
-              </div>
-              <span className="text-sm font-medium text-gray-700">النتائج النهائية</span>
-              <span className="text-xs text-gray-500">٩٠ ثانية</span>
-            </div>
           </div>
         </div>
       </div>
